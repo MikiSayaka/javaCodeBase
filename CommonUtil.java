@@ -78,7 +78,6 @@ public class CommonUtil implements java.io.Serializable {
    * @author YCC 2010.8.13
    */
   public static String toUnicodeStr(String s) {
-
     StringBuffer sb = new StringBuffer();
     if (isEmpty(s)) return "";
     for (int i = 0; i < s.length(); i++) {
@@ -95,7 +94,6 @@ public class CommonUtil implements java.io.Serializable {
    * @author YCC 2010.8.13
    */
   public static String toWebUnicodeStr(String s) {
-
     StringBuffer sb = new StringBuffer();
     if (isEmpty(s)) return "";
     for (int i = 0; i < s.length(); i++) {
