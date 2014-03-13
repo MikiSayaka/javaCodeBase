@@ -29,7 +29,7 @@ public class CommonUtil implements java.io.Serializable {
     return (str == null || str.length() == 0) ? rpl.trim() : str.trim();
   }
 
-	/**
+  /**
    * If the HashMap is null, then return true, or return false.
    * @param	Map htm	Input HashMap
    * @return boolean 
@@ -40,16 +40,16 @@ public class CommonUtil implements java.io.Serializable {
     return (htm == null || htm.size() == 0) ? true : false;
   }
 
-	/**
-	 * If the List is null, then return true, or return false.
-	 * @param	List lst Input List
-	 * @param	boolean	rtn
-	 * @author Miki Sayaka 2013.01.15
-	 * */
-	@SuppressWarnings("rawtypes")
+  /**
+   * If the List is null, then return true, or return false.
+   * @param	List lst Input List
+   * @param	boolean	rtn
+   * @author Miki Sayaka 2013.01.15
+   * */
+  @SuppressWarnings("rawtypes")
   public static boolean ltIsNull(List lt) {
-	  return (lt == null || lt.size() == 0) ? true : false;
-	}
+    return (lt == null || lt.size() == 0) ? true : false;
+  }
 
   /**
    * If the string array is null, then return true, or return false
