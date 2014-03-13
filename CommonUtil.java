@@ -6,39 +6,39 @@ import java.util.StringTokenizer;
 
 public class CommonUtil implements java.io.Serializable {
 
-	private static final long serialVersionUID = 1L;
+  private static final long serialVersionUID = 1L;
+
+  /**
+   * If input string is null or empty string, then return the empty string.
+   * @param	String str Input string
+   * @return String rtn
+   * @author Miki Sayaka 2013.01.15
+   * */
+  public static String isNotNull(String str) {
+    return (str == null || str.length() == 0) ? "" : str.trim();
+  }
+
+  /**
+   * If input string is null or empty string, then return the string that want to replace.
+   * @param	String str Input string
+   * @param	String rpl The string will replace the input string when the input string is null or empty string.
+   * @return String rtn
+   * @author Miki Sayaka 2013.01.15
+   * */
+  public static String isNotNull(String str, String rpl) {
+    return (str == null || str.length() == 0) ? rpl.trim() : str.trim();
+  }
 
 	/**
-	 * If input string is null or empty string, then return the empty string.
-	 * @param	String str Input string
-	 * @return String rtn
-	 * @author Miki Sayaka 2013.01.15
-	 * */
-	public static String isNotNull(String str) {
-		return (str == null || str.length() == 0) ? "" : str.trim();
-	}
-
-	/**
-	 * If input string is null or empty string, then return the string that want to replace.
-	 * @param	String str Input string
-	 * @param	String rpl The string will replace the input string when the input string is null or empty string.
-	 * @return String rtn
-	 * @author Miki Sayaka 2013.01.15
-	 * */
-	public static String isNotNull(String str, String rpl) {
-		return (str == null || str.length() == 0) ? rpl.trim() : str.trim();
-	}
-
-	/**
-	 * If the HashMap is null, then return true, or return false.
-	 * @param	Map htm	Input HashMap
-	 * @return boolean 
-	 * @author Miki Sayaka 2013.01.15
-	 */
-	@SuppressWarnings("rawtypes")
-	public static boolean hmIsNull(Map htm) {
-		return (htm == null || htm.size() == 0) ? true : false;
-	}
+   * If the HashMap is null, then return true, or return false.
+   * @param	Map htm	Input HashMap
+   * @return boolean 
+   * @author Miki Sayaka 2013.01.15
+   */
+  @SuppressWarnings("rawtypes")
+  public static boolean hmIsNull(Map htm) {
+    return (htm == null || htm.size() == 0) ? true : false;
+  }
 
 	/**
 	 * If the List is null, then return true, or return false.
